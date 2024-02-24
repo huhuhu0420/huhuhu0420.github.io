@@ -25,7 +25,7 @@
 	}
 
 	const items = [
-		{ title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster' },
+		// { title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster' },
 		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
 		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
 		{ title: NavBar.Education, to: '/education', icon: 'i-carbon-education' },

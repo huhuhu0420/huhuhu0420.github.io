@@ -57,7 +57,7 @@ export const HOME: HomePageParams = {
 		},
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 't110590001@ntut.org.tw'
 		}
 	]
 };
