@@ -27,15 +27,13 @@
 			if (index < items.length - 1) {
 				index = index + 1;
 			} else {
-				index = index - 1;
-				toRight = false;
+				index = 0;
 			}
 		} else {
 			if (index > 0) {
 				index = index - 1;
 			} else {
-				index = index + 1;
-				toRight = true;
+				index = items.length - 1;
 			}
 		}
 	};
