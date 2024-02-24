@@ -36,6 +36,20 @@ const MY_SKILLS = [
 		logo: Assets.Python,
 		name: 'Python'
 	}),
+	s({
+		slug: 'postgresql',
+		color: 'blue',
+		description: svelte,
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL'
+	}),
+	s({
+		slug: 'docker',
+		color: 'blue',
+		description: svelte,
+		logo: Assets.Docker,
+		name: 'Docker'
+	}),
 ];
 
 export default MY_SKILLS;
