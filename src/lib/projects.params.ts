@@ -8,9 +8,10 @@ const MY_PROJECTS: Array<Project> = [
 		color: '#ff3e00',
 		description:
 			'An e-commerce website project utilizing Golang for the backend, Svelte for the frontend, and PostgreSQL for the database. Leveraged Docker for deployment and containerization of the application',
-		shortDescription:
-			'A C2C e-commerce website selling foods on PUN-street.',
-		links: [{ to: 'https://github.com/PUArallelepiped/PUN-street-Universal-Access', label: 'GitHub' }],
+		shortDescription: 'A C2C e-commerce website selling foods on PUN-street.',
+		links: [
+			{ to: 'https://github.com/PUArallelepiped/PUN-street-Universal-Access', label: 'GitHub' }
+		],
 		logo: Assets.Svelte,
 		name: 'PUN-street Universal Access',
 		period: {
@@ -35,7 +36,7 @@ const MY_PROJECTS: Array<Project> = [
 			{
 				label: '',
 				src: 'https://i.imgur.com/91ohU0t.png'
-			},
+			}
 		]
 	}
 ];

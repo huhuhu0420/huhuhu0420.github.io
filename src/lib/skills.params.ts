@@ -49,7 +49,7 @@ const MY_SKILLS = [
 		description: svelte,
 		logo: Assets.Docker,
 		name: 'Docker'
-	}),
+	})
 ];
 
 export default MY_SKILLS;

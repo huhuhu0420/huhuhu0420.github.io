@@ -72,7 +72,7 @@ const Assets = {
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
 	NTUT: a('ntut.png'),
-	AIS3: a('AIS3.png'),
+	AIS3: a('AIS3.png')
 };
 
 export default Assets;

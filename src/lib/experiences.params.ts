@@ -17,7 +17,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		links: [],
 		logo: Assets.AIS3,
 		shortDescription: ''
-	},
+	}
 ];
 
 export default MY_EXPERIENCES;

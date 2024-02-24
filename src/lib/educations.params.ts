@@ -9,9 +9,9 @@ export const MY_EDUCATIONS: Array<Education> = [
 		logo: Assets.NTUT,
 		name: '',
 		organization: 'NTUT',
-		period: { from: new Date(2021, 7, 1)},
+		period: { from: new Date(2021, 7, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
 		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
-	},
+	}
 ];
