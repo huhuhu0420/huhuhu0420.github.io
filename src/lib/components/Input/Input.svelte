@@ -1,13 +1,13 @@
 <script lang="ts">
 	export let value = '';
 	export let placeholder = '';
-    let inputElement: HTMLInputElement;
+	let inputElement: HTMLInputElement;
 
-    function focus() {
-        inputElement.focus();
-    }
+	function focus() {
+		inputElement.focus();
+	}
 
-    export { focus };
+	export { focus };
 </script>
 
 <input
