@@ -13,7 +13,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		period: { from: new Date(2022, 7, 15), to: new Date(2022, 7, 30) },
 		skills: getSkills(),
 		name: 'AIS3',
-		color: 'red',
+		color: 'gray',
 		links: [],
 		logo: Assets.AIS3,
 		shortDescription: ''
