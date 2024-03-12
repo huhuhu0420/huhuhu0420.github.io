@@ -49,7 +49,14 @@ const MY_SKILLS = [
 		description: svelte,
 		logo: Assets.Docker,
 		name: 'Docker'
-	})
+	}),
+	s({
+		slug: 'kubernetes',
+		color: 'blue',
+		description: svelte,
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes'
+	}),
 ];
 
 export default MY_SKILLS;

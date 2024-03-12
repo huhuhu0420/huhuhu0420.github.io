@@ -38,6 +38,23 @@ const MY_PROJECTS: Array<Project> = [
 				src: 'https://i.imgur.com/91ohU0t.png'
 			}
 		]
+	},
+	{
+		slug: 'Simple-AD-Service',
+		color: 'blue',
+		links: [
+			{to: 'https://github.com/huhuhu0420/simple-ad-service', label: 'GitHub'}
+		],
+		period: {
+			from: new Date('2024-02-07'),
+			to: new Date('2024-03-20')
+		},
+		type: 'service',
+		name: 'Simple-AD-Service',
+		description: 'A simple ad service that allows users to create and read ads.',
+		shortDescription: 'A simple ad service.',
+		logo: Assets.Go,
+		skills: getSkills('golang', 'postgresql', 'docker', 'kubernetes'),
 	}
 ];
 
