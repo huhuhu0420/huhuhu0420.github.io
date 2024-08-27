@@ -55,7 +55,23 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription: 'A simple ad service.',
 		logo: Assets.Go,
 		skills: getSkills('golang', 'postgresql', 'docker', 'kubernetes'),
-	}
+	},
+	{
+		slug: 'Naive Framework',
+		color: 'green',
+		links: [
+			{to: 'https://github.com/NTUT-RL-Lab/Naive-Framework', label: 'GitHub'}
+		],
+		period: {
+			from: new Date('2023-09-01'),
+		},
+		type: 'framework',
+		name: 'Naive Framework',
+		skills: getSkills('python', 'reinforcement learning', 'gym'),
+		description: 'A simple framework for reinforcement learning.',
+		shortDescription: 'A simple framework for reinforcement learning.',
+		logo: Assets.Python,
+	},
 ];
 
 export default MY_PROJECTS;
