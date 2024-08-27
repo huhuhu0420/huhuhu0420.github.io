@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'HUHUHU\'s Portfolio';
 
 export const NavBar = {
 	home: 'Home',
