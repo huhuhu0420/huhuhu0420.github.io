@@ -74,6 +74,7 @@ const Assets = {
 	NTUT: a('ntut.png'),
 	AIS3: a('AIS3.png'),
 	iforensics: a('iforensics.png'),
+	LINE: a('line.png')
 };
 
 export default Assets;

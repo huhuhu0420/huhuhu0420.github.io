@@ -4,18 +4,18 @@ import { ContractType, type Experience } from './types';
 
 const MY_EXPERIENCES: Array<Experience> = [
 	{
-		slug: 'AIS3',
-		company: '',
-		description: 'Advanced Information Security Summer School',
-		contract: ContractType.SelfEmployed,
-		type: 'Cyper Security',
-		location: 'banqiao, New Taipei City, Taiwan',
-		period: { from: new Date(2022, 7, 15), to: new Date(2022, 7, 30) },
+		slug: 'LINE',
+		company: 'LINE Taiwan',
+		description: 'Tech Fresh',
+		contract: ContractType.Internship,
+		type: '',
+		location: 'Taipei, Taiwan',
+		period: { from: new Date(2025, 3, 1)},
 		skills: getSkills(),
-		name: 'AIS3',
-		color: 'gray',
+		name: 'Tech Fresh',
+		color: 'green',
 		links: [],
-		logo: Assets.AIS3,
+		logo: Assets.LINE,
 		shortDescription: ''
 	},
 	{
@@ -36,8 +36,8 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'iforensics',
 		company: 'iForensics',
-		description: 'summer internship in iForensics',
-		contract: ContractType.PartTime,
+		description: 'Summer internship',
+		contract: ContractType.Internship,
 		type: '',
 		location: 'Taipei, Taiwan',
 		period: { from: new Date(2024, 5, 1), to: new Date(2024, 7, 30) },
