@@ -4,6 +4,24 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
+		slug: 'Trending Trending Events Arrangement and Reservation Service (TEARS💧😭)',
+		color: '#00ccffff',
+		description:
+			'A trending event arrangement and reservation service which stores data in MySQL, utilizes Kafka for synchronize MySQL binLog to Elasticsearch, and builds the backend with Java Spring Boot framework.',
+		shortDescription: 'A trending event arrangement and reservation service.',
+		links: [
+			{ to: 'https://github.com/huhuhu0420/TEARS', label: 'GitHub' }
+		],
+		logo: Assets.Java,
+		name: 'TEARS💧',
+		period: {
+			from: new Date('2025-03-01'),
+			to: new Date('2025-04-20')
+		},
+		skills: getSkills('java', 'mysql', 'elasticsearch', 'kafka', 'docker'),
+		type: 'service',
+	},
+	{
 		slug: 'PUN-street Universal Access',
 		color: '#ff3e00',
 		description:

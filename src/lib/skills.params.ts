@@ -57,6 +57,34 @@ const MY_SKILLS = [
 		logo: Assets.Kubernetes,
 		name: 'Kubernetes'
 	}),
+	s({
+		slug: 'kafka',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Kafka,
+		name: 'Kafka'
+	}),
+	s({
+		slug: 'mysql',
+		color: 'blue',
+		description: svelte,
+		logo: Assets.MySQL,
+		name: 'MySQL'
+	}),
+	s({
+		slug: 'java',
+		color: 'red',
+		description: svelte,
+		logo: Assets.Java,
+		name: 'Java'
+	}),
+	s({
+		slug: 'elasticsearch',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.ElasticSearch,
+		name: 'ElasticSearch'
+	}),
 ];
 
 export default MY_SKILLS;
