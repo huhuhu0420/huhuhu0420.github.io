@@ -1,6 +1,7 @@
 <script lang="ts">
 	import 'uno.css';
 	import NavMenu from '$lib/components/NavMenu/NavMenu.svelte';
+	import ParticlesBackground from '$lib/components/ParticlesBackground/ParticlesBackground.svelte';
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
@@ -12,6 +13,7 @@
 </script>
 
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
+	<ParticlesBackground />
 	<NavMenu />
 	<div class="content container"><slot /></div>
 </div>
