@@ -6,19 +6,19 @@ const MY_PROJECTS: Array<Project> = [
 	{
 		slug: 'Trending Trending Events Arrangement and Reservation Service (TEARS💧😭)',
 		color: '#00ccffff',
-		description:
-			'A trending event arrangement and reservation service which stores data in MySQL, utilizes Kafka for synchronize MySQL binLog to Elasticsearch, and builds the backend with Java Spring Boot framework.',
-		shortDescription: 'A trending event arrangement and reservation service.',
+		description: `- Reduced full-text search latency from 438ms to 31ms (14x, k6 benchmark on 1M records) by architecting a CQRS event-driven pipeline that streams MySQL binlog changes to ES via Debezium and Kafka Connect (CDC)
+- Built an event reservation backend in Spring Boot and integrated a 5-service stack (app, MySQL, Kafka, Kafka Connect, ES) via Docker Compose for one-command deployment`,
+		shortDescription: 'Event reservation service with a CQRS/CDC pipeline streaming MySQL to Elasticsearch — 14x faster full-text search.',
 		links: [
 			{ to: 'https://github.com/huhuhu0420/TEARS', label: 'GitHub' }
 		],
 		logo: Assets.Java,
 		name: 'TEARS💧',
 		period: {
-			from: new Date('2025-03-01'),
-			to: new Date('2025-04-20')
+			from: new Date('2025-01-01'),
+			to: new Date('2025-12-31')
 		},
-		skills: getSkills('java', 'mysql', 'elasticsearch', 'kafka', 'docker'),
+		skills: getSkills('java', 'spring-boot', 'mysql', 'elasticsearch', 'kafka', 'docker'),
 		type: 'service',
 	},
 	{
@@ -64,15 +64,17 @@ const MY_PROJECTS: Array<Project> = [
 			{to: 'https://github.com/huhuhu0420/simple-ad-service', label: 'GitHub'}
 		],
 		period: {
-			from: new Date('2024-02-07'),
-			to: new Date('2024-03-20')
+			from: new Date('2024-01-01'),
+			to: new Date('2024-12-31')
 		},
 		type: 'service',
-		name: 'Simple-AD-Service',
-		description: 'A simple ad service that allows users to create and read ads.',
-		shortDescription: 'A simple ad service.',
+		name: 'SADS',
+		description: `- Engineered an ad-serving API in Golang (Gin) with audience targeting (age, country, gender, platform) via multi-table joins in PostgreSQL, sustaining 10k+ RPS in k6 load tests with pgxpool connection pooling
+- Containerized and deployed the service to GKE with Kubernetes and Ingress routing, creating merge gates by adding automated unit and API testing in GitHub Actions CI pipeline
+- Evaluated Redis response caching and documented its limits for write-heavy, high-cardinality query workloads, informing a cache-bypass design decision`,
+		shortDescription: 'An ad-serving API on GKE sustaining 10k+ RPS, with audience targeting and evaluated Redis caching.',
 		logo: Assets.Go,
-		skills: getSkills('golang', 'postgresql', 'docker', 'kubernetes'),
+		skills: getSkills('golang', 'gin', 'postgresql', 'redis', 'docker', 'kubernetes'),
 	},
 	{
 		slug: 'Naive Framework',

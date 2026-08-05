@@ -21,6 +21,12 @@
 		: 'Present';
 
 	const period = `${from} - ${to} · ${months}`;
+
+	const descriptionLines = experience.description
+		.split('\n')
+		.map((line) => line.trim())
+		.filter((line) => line.length > 0)
+		.map((line) => line.replace(/^-\s*/, ''));
 </script>
 
 <Card
@@ -49,7 +55,15 @@
 				</ChipIcon>
 			</div>
 			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
+			{#if descriptionLines.length > 1}
+				<ul class="experience-description">
+					{#each descriptionLines as line}
+						<li>{line}</li>
+					{/each}
+				</ul>
+			{:else}
+				<div class="experience-description">{experience.description}</div>
+			{/if}
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon
@@ -62,3 +76,16 @@
 		</div>
 	</div>
 </Card>
+
+<style>
+	ul.experience-description {
+		margin: 0;
+		padding-left: 1.2em;
+		list-style: disc;
+	}
+
+	ul.experience-description li {
+		padding: 2px 0;
+		line-height: 1.5rem;
+	}
+</style>

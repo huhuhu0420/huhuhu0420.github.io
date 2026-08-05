@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import { MY_EDUCATIONS } from './educations.params';
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
@@ -46,18 +47,18 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: '',
-	lastName: 'huhuhu',
-	description: "I don't know who am I",
+	name: 'huhuhu',
+	lastName: '',
+	description: ' MSIN @ Carnegie Mellon University',
 	links: [
 		{ platform: Platform.GitHub, link: 'https://github.com/huhuhu0420' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/in/%E4%B8%9E%E8%BB%92-%E9%83%AD-7b78a8212/'
+			link: 'https://www.linkedin.com/in/cheng-hsuan-kuo'
 		},
 		{
 			platform: Platform.Email,
-			link: 't110590001@ntut.org.tw'
+			link: 'chenghsuan.csie@gmail.com'
 		}
 	]
 };

@@ -14,7 +14,7 @@ const Assets = {
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastApi: a('fastapi.svg'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
 	Kafka: a('kafka.svg'),
@@ -76,7 +76,10 @@ const Assets = {
 	iforensics: a('iforensics.png'),
 	LINE: a('line.png'),
 	ElasticSearch: a('elasticsearch.png'),
-	MySQL: a('mysql.png')
+	MySQL: a('mysql.png'),
+	SpringBoot: a('springboot.svg'),
+	Gin: a('gin.svg'),
+	CMU: a('cmu.svg')
 };
 
 export default Assets;

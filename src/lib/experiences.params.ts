@@ -6,17 +6,19 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'LINE',
 		company: 'LINE Taiwan',
-		description: 'Tech Fresh',
+		description: `- Developed a Golang backend service for a project-management platform now adopted by 30+ cross-functional teams, consolidating project tracking that was previously scattered across multiple systems
+- Integrated Atlas into the CI/CD pipeline to lint schema changes and auto-apply migrations on deploy, eliminating ~15 min of manual per-release updates and catching breaking migrations before merge
+- Initiated and architected an Express.js service automating accounts-receivable aging reports, replacing manual spreadsheet compilation; structured with Clean Architecture and DDD, enabling new contributors to ship features in a week`,
 		contract: ContractType.Internship,
-		type: '',
+		type: 'Software Engineer Intern',
 		location: 'Taipei, Taiwan',
-		period: { from: new Date(2025, 3, 1)},
-		skills: getSkills(),
-		name: 'Tech Fresh',
+		period: { from: new Date(2025, 2, 1), to: new Date(2026, 1, 28) },
+		skills: getSkills('golang', 'express', 'mysql'),
+		name: 'Software Engineer Intern',
 		color: 'green',
 		links: [],
 		logo: Assets.LINE,
-		shortDescription: ''
+		shortDescription: 'Software Engineer Intern, LINE Taiwan'
 	},
 	{
 		slug: 'cnc',
@@ -36,17 +38,18 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'iforensics',
 		company: 'iForensics',
-		description: 'Summer internship',
+		description: `- Developed interactive graph visualization features for a commercial digital forensics product (FastAPI, Vue.js), implementing node expansion and detail inspection for multi-hop transaction tracing
+- Migrated the web application to a cross-platform Electron desktop app to enable on-device analysis for investigators`,
 		contract: ContractType.Internship,
-		type: '',
+		type: 'R&D Intern',
 		location: 'Taipei, Taiwan',
-		period: { from: new Date(2024, 5, 1), to: new Date(2024, 7, 30) },
-		skills: getSkills(),
-		name: 'iForensics Internship',
+		period: { from: new Date(2024, 5, 1), to: new Date(2024, 8, 30) },
+		skills: getSkills('fastapi', 'vue', 'electron'),
+		name: 'R&D Intern',
 		color: 'blue',
 		links: [],
 		logo: Assets.iforensics,
-		shortDescription: ''
+		shortDescription: 'R&D Intern, iForensics'
 	}
 ];
 
