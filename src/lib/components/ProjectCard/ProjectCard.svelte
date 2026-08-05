@@ -57,11 +57,7 @@
 	<CardDivider />
 	<div class="row flex-wrap">
 		{#each project.skills as tech}
-			<ChipIcon
-				logo={getAssetURL(tech.logo)}
-				name={tech.name}
-				href={`${base}/skills/${tech.slug}`}
-			/>
+			<ChipIcon logo={getAssetURL(tech.logo)} name={tech.name} />
 		{/each}
 	</div>
 </Card>

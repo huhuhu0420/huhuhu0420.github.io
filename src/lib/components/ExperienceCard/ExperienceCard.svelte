@@ -66,11 +66,7 @@
 			{/if}
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
-					<ChipIcon
-						logo={getAssetURL(skill.logo)}
-						name={skill.name}
-						href={`${base}/skills/${skill.slug}`}
-					/>
+					<ChipIcon logo={getAssetURL(skill.logo)} name={skill.name} />
 				{/each}
 			</div>
 		</div>
