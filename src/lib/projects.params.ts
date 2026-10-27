@@ -4,6 +4,39 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
+		slug: 'Raft',
+		color: '#00add8',
+		description: `- Implementing the Raft consensus protocol in Go (CMU 15-440 Distributed Systems) on top of a lossy, partition-prone RPC layer
+- Built leader election with randomized election timeouts (400–700ms), term-based role transitions (follower/candidate/leader), and periodic leader heartbeats via AppendEntries
+- Concurrency-safe peer state guarded by a mutex and verified with Go's race detector; log replication and persistence in progress`,
+		shortDescription: 'A Raft consensus implementation in Go with leader election and heartbeats; log replication in progress.',
+		links: [],
+		logo: Assets.Go,
+		name: 'Raft',
+		period: {
+			from: new Date('2026-10-01')
+		},
+		skills: getSkills('golang'),
+		type: 'distributed system'
+	},
+	{
+		slug: 'BusTub',
+		color: '#9c033a',
+		description: `- Building components of BusTub, a disk-oriented relational DBMS in C++ (CMU 15-445 Database Systems)
+- Implemented a buffer pool manager with an ARC (Adaptive Replacement Cache) replacer using live/ghost lists with O(1) lookup and eviction, an async disk scheduler, and RAII read/write page guards with a deadlock-free latch ordering
+- Built a concurrent B+Tree index supporting insert, delete (split, coalesce, redistribute), tombstone-based lazy deletion, and range-scan iterators
+- Applied latch crabbing with optimistic write descent and pessimistic fallback, acquiring sibling latches left-to-right to avoid deadlocks`,
+		shortDescription: 'A disk-oriented DBMS in C++ with an ARC buffer pool and a concurrent B+Tree index.',
+		links: [],
+		logo: Assets.Cpp,
+		name: 'BusTub',
+		period: {
+			from: new Date('2026-08-26')
+		},
+		skills: getSkills('cpp'),
+		type: 'database'
+	},
+	{
 		slug: 'Trending Trending Events Arrangement and Reservation Service (TEARS💧😭)',
 		color: '#00ccffff',
 		description: `- Reduced full-text search latency from 438ms to 31ms (14x, k6 benchmark on 1M records) by architecting a CQRS event-driven pipeline that streams MySQL binlog changes to ES via Debezium and Kafka Connect (CDC)
