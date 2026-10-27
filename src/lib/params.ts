@@ -22,6 +22,7 @@ export const NavBar = {
 	personal: 'Projects',
 	career: 'Experiences',
 	resume: 'Resume',
+	activity: 'Activity',
 	skills: 'Skills',
 	Education: 'Education'
 };
@@ -90,4 +91,10 @@ export const SEARCH: SearchPageParams = {
 export const EDUCATION: EducationPageParams = {
 	items: MY_EDUCATIONS,
 	title: 'Education'
+};
+
+export const ACTIVITY = {
+	title: 'Activity',
+	github: 'huhuhu0420',
+	leetcode: 'huhuhu0420'
 };
