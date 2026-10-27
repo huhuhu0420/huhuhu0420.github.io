@@ -147,7 +147,7 @@ const MY_SKILLS = [
 		description: svelte,
 		logo: Assets.TypeScript,
 		name: 'TypeScript'
-	}),
+	})
 ];
 
 export default MY_SKILLS;

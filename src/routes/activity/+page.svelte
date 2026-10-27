@@ -40,7 +40,7 @@
 					month: 'short',
 					day: 'numeric',
 					timeZone: 'UTC'
-			  })
+				})
 			: '';
 </script>
 
@@ -76,9 +76,24 @@
 				{:then days}
 					{@const streaks = getStreaks(days)}
 					<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-						<StatTile icon="i-carbon-chart-line" label="Contributions" value={total(days)} hint="last 12 months" />
-						<StatTile icon="i-carbon-fire" label="Current streak" value={streaks.current} suffix="days" />
-						<StatTile icon="i-carbon-trophy" label="Longest streak" value={streaks.longest} suffix="days" />
+						<StatTile
+							icon="i-carbon-chart-line"
+							label="Contributions"
+							value={total(days)}
+							hint="last 12 months"
+						/>
+						<StatTile
+							icon="i-carbon-fire"
+							label="Current streak"
+							value={streaks.current}
+							suffix="days"
+						/>
+						<StatTile
+							icon="i-carbon-trophy"
+							label="Longest streak"
+							value={streaks.longest}
+							suffix="days"
+						/>
 						<StatTile
 							icon="i-carbon-calendar"
 							label="Best day"
@@ -140,9 +155,24 @@
 								decimals={1}
 								suffix="%"
 							/>
-							<StatTile icon="i-carbon-events" label="Submissions" value={total(days)} hint="last 12 months" />
-							<StatTile icon="i-carbon-fire" label="Current streak" value={streaks.current} suffix="days" />
-							<StatTile icon="i-carbon-trophy" label="Longest streak" value={streaks.longest} suffix="days" />
+							<StatTile
+								icon="i-carbon-events"
+								label="Submissions"
+								value={total(days)}
+								hint="last 12 months"
+							/>
+							<StatTile
+								icon="i-carbon-fire"
+								label="Current streak"
+								value={streaks.current}
+								suffix="days"
+							/>
+							<StatTile
+								icon="i-carbon-trophy"
+								label="Longest streak"
+								value={streaks.longest}
+								suffix="days"
+							/>
 						</div>
 					</div>
 					<Heatmap {days} color={LEETCODE_COLOR} unit="submission">
@@ -162,12 +192,7 @@
 <style lang="scss">
 	.skeleton {
 		border-radius: 10px;
-		background: linear-gradient(
-			90deg,
-			var(--tertiary) 0%,
-			var(--accent) 50%,
-			var(--tertiary) 100%
-		);
+		background: linear-gradient(90deg, var(--tertiary) 0%, var(--accent) 50%, var(--tertiary) 100%);
 		background-size: 200% 100%;
 		animation: shimmer 1.4s linear infinite;
 		opacity: 0.6;

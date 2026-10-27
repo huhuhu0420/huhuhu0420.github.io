@@ -17,7 +17,9 @@
 <div
 	class="col gap-1 min-w-0 p-3 sm:p-4 rounded-10px border-1px border-solid border-[var(--border)] bg-[var(--main)]"
 >
-	<div class="row items-center gap-2 text-[0.75em] uppercase tracking-wider text-[var(--accent-text)]">
+	<div
+		class="row items-center gap-2 text-[0.75em] uppercase tracking-wider text-[var(--accent-text)]"
+	>
 		{#if icon}<span class={icon} />{/if}
 		<span>{label}</span>
 	</div>

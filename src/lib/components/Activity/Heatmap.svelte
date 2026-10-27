@@ -13,7 +13,20 @@
 	const TOP = 18;
 	// share of the accent color mixed into the empty-cell color, per level
 	const LEVELS = [0, 35, 55, 78, 100];
-	const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	const MONTHS = [
+		'Jan',
+		'Feb',
+		'Mar',
+		'Apr',
+		'May',
+		'Jun',
+		'Jul',
+		'Aug',
+		'Sep',
+		'Oct',
+		'Nov',
+		'Dec'
+	];
 
 	let wrapper: HTMLElement;
 	let scroller: HTMLElement;
